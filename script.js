@@ -69,7 +69,7 @@ function calcCrustPrice(crust) {
   }
 }
 
-function Price(toppings) {
+function calcToppingsPrice(toppings) {
   var nbrofTopping = 0;
   for (i = 0; i < toppings.length; i++) {
     if (toppings[i] == "Ham") {
