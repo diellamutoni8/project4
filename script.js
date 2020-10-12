@@ -49,7 +49,7 @@ var crustPrice = {
   gluten: 1200,
  
 };
-function sizeCalcPrice(size) {
+function calcSizePrice(size) {
   if (size === "small") {
     return sizePrice.small * 1;
   } else if (size === "medium") {
@@ -59,7 +59,7 @@ function sizeCalcPrice(size) {
   }
 }
 
-function crustCalcPrice(crust) {
+function calcCrustPrice(crust) {
   if (crust === "crispy") {
     return crustPrice.crispy * 1;
   } else if (crust === "stuffed") {
@@ -69,7 +69,7 @@ function crustCalcPrice(crust) {
   }
 }
 
-function toppingsCalcPrice(toppings) {
+function Price(toppings) {
   var nbrofTopping = 0;
   for (i = 0; i < toppings.length; i++) {
     if (toppings[i] == "Ham") {
