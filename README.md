@@ -25,7 +25,7 @@
 
    1.open your github account. 
    
-   2.follow this link https://github.com/diellamutoni8/project3.git to go to the project.
+   2.follow this link https://github.com/diellamutoni8/project4.git to go to the project.
    
    3.click on the the green button and copy the link given.
    
