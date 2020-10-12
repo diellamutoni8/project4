@@ -36,7 +36,7 @@ ul li:hover ul li{
 
 
 #home{
-    background-image: url('Pizza-Toppings.jpg');
+    background-image: url('images/Pizza-Toppings.jpg');
     padding: 150px;
     text-align: center;
     font-style: italic;
@@ -46,13 +46,57 @@ ul li:hover ul li{
 
 #order{
     text-align: center;
-   
 }
 #order :hover{
     display: show;
    
 }
-
-#contact{
+#about h1{
+ text-align: center;
+}
+#about .aboutt{ 
+    background-color: black;
     text-align:center;
+    opacity: .8;
+    color: white;
+}
+#contact{
+    text-align:center; 
+}
+#contact .contactt form{
+    background-color: black;
+    text-align:center;
+    opacity: .8;
+    color: white;
+}
+#order1{
+    text-align: center;
+    background-color: black;
+    opacity: .8;
+    color: white;
+}
+.checkouts {
+    display: none;
+    text-align: center;
+  }
+  .checkouts h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: darkblue;
+  }
+  .addresses {
+    display: none;
+    text-align: center;
+   
+  }
+  #order{
+    
+    text-align: center;
+    background-repeat: no-repeat;
+
+}
+.yourOrders{
+    text-align: center;
+    
+ 
 }
