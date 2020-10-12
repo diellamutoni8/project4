@@ -93,6 +93,8 @@ ul li:hover ul li{
     
     text-align: center;
     background-repeat: no-repeat;
+    background-image: url('images/Pizza-Toppings.jpg');
+    background-size: cover;
 
 }
 .yourOrders{
