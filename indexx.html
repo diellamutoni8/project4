@@ -4,54 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <section>
         <div id="order">
-            <div class="Pizza">
-                <h1>ORDERS</h1>
-                <form>
-                    <p>Kindly select the size of your pizza</p><br>
-                    <input type="radio" name="size" value="small">small<br>
-                    <input type="radio" name="size" value="medium">medium<br>
-                    <input type="radio" name="size" value="large">large<br>
-                </form>
-            </div>
+                <h1><strong><em>ORDERS</em></strong></h1>
+          
+            <form action="" id="orderform">
+            <strong>Names: </strong>
+            <input id="username" type="text" name="name" value="" required ><br><br>
+            <strong>Phone-number: </strong>
+            <input type="text" name="phone" value="" required> <br><br>
+            <div class="new-orders">
+                <div class="orders-new">
+                <strong>Pizza size:</strong>
+                <select name="pizza-size" id="size">
+                  <option value="small">small -- 5,000RWf</option>
+                  <option value="medium">medium -- 7,000RWf</option>
+                  <option value="large">large -- 9,000RWf</option>
+                </select> <br> <br>
+                <strong>Please select the crust of your choice:</strong>
+                <select name="crust" id="crustt">
+                  <option value="cripsy">cripsy --  1,500RWf</option>
+                  <option value="stuffed">Cheese-Stuffed Crust -- 2,000RWf</option>
+                  <option value="gluten-free">gluten-free -- 2,500RWf</option>
+                
+                </select>
+                <br><br>
+                <strong>Kindly choose your toppings :</strong><br>
+                <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="Ham"/>
+  
+                    <label class="form-check-label" for="inlineCheckbox1">
+                      Ham (2,000RWf)</label>
+  
+                  </div><br>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox2"
+                      value="Pepperoni"/>
+  
+                    <label class="form-check-label" for="inlineCheckbox2">
+                      Pepperoni (2,000RWf)</label>
+  
+                  </div>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox2"
+                      value="Mozzarella"/>
+  
+                    <label class="form-check-label" for="inlineCheckbox3">
+                      Mozzarella (4,500RWf)</label>
+  
+                  </div>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                    type="checkbox" 
+                    id="inlineCheckbox2" 
+                    value="Sausage"/>
 
+                    <label class="form-check-label" for="inlineCheckbox4">
+                      Sausage(3,000RWf)</label>
+                  </div>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" 
+                    type="checkbox" 
+                    id="inlineCheckbox2"
+                     value="Bacon"/>
 
-            <div class="crust">
-                <form>
-                    <br>
-                    <p>Kindly select your favorite crust</p><br>
-                    <input type="radio" name="crust" value="Crispy">Crispy<br>
-                    <input type="radio" name="crust" value="Stuffed">Stuffed<br>
-                    <input type="radio" name="crust" value="Gluten-fee">Gluten-fee<br>
-                </form>
-            </div>
+                    <label class="form-check-label" for="inlineCheckbox5">
+                      Bacon (4,000RWf)</label>
+                  </div>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox2"
+                      value="Mushroom"/>
+  
+                    <label class="form-check-label" for="inlineCheckbox6">
+                      Mushroom(3,500RWf)</label>
+  
+                  </div>
+                <br>
+                <br>
+              </div>
+              </div>
+              
+              <input type="submit" id="buttonOrder" value="ORDER">
+            </form>
 
-            <div class="toppings">
-                <form>
-                    <br>
-                    <p>Please Kindly select the toppings of your choice</p><br>
-                    <input type="radio" name="toppings" value="">Sausage,caramelized onions and fennel<br>
-                    <input type="radio" name="toppings" value="">Pepperoni ,tomatoes ,mushrooms and onions<br>
-                    <input type="radio" name="toppings" value="">Pepperoni ,sausage, green-pepper ,onion and mushrooms<br>
-                    <input type="radio" name="toppings" value="">BBQ sauce, grilled chicken, scallions, and cheddar cheese<br>
-                    <input type="radio" name="toppings" value="">Roasted red peppers, chorizo, and feta<br>
-                    <input type="radio" name="toppings" value="">Spinach, caramelized onion, and bacon<br>
-                    <input type="radio" name="toppings" value="">Figs, prosciutto, and caramelized onions<br><br>
-                  
-                </form>
-                <br>
-                <button type="button" class="btn btn-primary">Delivery</button>
-                <button type="button" class="btn btn-light">Pick up </button><br>
-                <br>
-                <input type="submit" value="submit"><br>
-                <br>
-            </div>
+          </div>
         </div>
+
+
+        <div class="col-sm-5">
+          <div class="yourOrders">
+            <h3>Your orders</h3>
+                <ol id="items">
+  
+                </ol>
+            <button type="button" class="btn btn-success" name="checkout" id="chckout" target="_blank"> CHECK OUT</button>
+          </div>
+  
+        </div>
+      </div>
+  
+          </div>
     </section>
+
+<section>
+    <div id="order1">
+   <h1><strong><em>ADDRESS</em></strong></h1>
+   
+    <div class="delivery1">
+       <div class="checkouts">
+         <h3>Pizza ordered</h3>
+         <ol id="checkoutslist">
+
+         </ol>
+         <h4 > Thank you for buying with us!</h4>
+         <span class="btn btn-primary" id="delivers">Deliver</span>
+         <span class="btn btn-light" id="delivers">Take Away</span><br>
+         <br>
+       </div>
+     
+     <div class="col-sm-6">
+       <div class="addresses">
+
+         <h4>Fill in your address</h4>
+         <form class="">
+           Enter your address:
+           <input type="text" name="addr" value="" > <br>
+           <br>
+           <input id="addre" type="submit"  value="SUBMIT"> <br>
+           <p>The delivery fee is <strong>2,000RWf.</strong> </p>
+         </form>
+
+       </div>
+   </div>
+   </div>
+   </div>
+</section>
+
 </body>
 </html>
