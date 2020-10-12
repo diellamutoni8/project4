@@ -7,20 +7,21 @@
     <link href="style.css" rel="stylesheet">
     <script src="script.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="jquery-3.5.1.js"></script>
 </head>
 <body>
 
     <ul>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#contact"></a>Contact</li>
-        <li><a href="#order">Order</a>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="indexx.html" target="_blank" >ORDER</a>
             <ul>
                 <li><a>Pizza</a></li>
                 <li><a>Crust</a></li>
                 <li><a>Toppings</a></li>
             </ul>
         </li>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home">HOME</a></li>
     </ul>
 
    
@@ -28,67 +29,56 @@
         <div id="home">
             <div class="titles">
                 <h1>DELICIOUS PIZZA</h1>
-                <p>Welcome to Our Website</p>
+                <p>Welcome to Our Website</p><br>
             </div>
 
         </div>
     </section>
 
     <section>
-        <div id="order">
-            <div class="Pizza">
-                <h1>ORDERS</h1>
-                <form>
-                    <p>Kindly select the size of your pizza</p><br>
-                    <input type="radio" name="size" value="small">small<br>
-                    <input type="radio" name="size" value="medium">medium<br>
-                    <input type="radio" name="size" value="large">large<br>
-                </form>
+        <div id="about">
+            <h1><em>ABOUT US</em></h1>
+            <div class="aboutt"> 
+                <p>
+                    <strong><em>Delicious Pizza</em></strong> prides itself on this rich tradition of mouth-water pizza and superior service.<br> 
+                    At <strong><em>Delicious Pizza</em></strong> pleasing the customer comes first.<br> <strong><em>Delicious Pizza</em></strong>is motivated by the quality and taste of the product it serves.</p>
+                    <p>
+                    <br><strong><em>Delicious Pizza</em></strong> makes a commitment to our customers to never “cost-cut” quality.<br>
+                    </p>
+
+                    Come to <strong><em>Delicious Pizza</em></strong> and we’ll make you the freshest, best-tasting,<br> highest quality pizza you’ll ever eat… every time you walk through our door. 
+                   <br> And we promise once you eat our pizza; you’ll never go anywhere else. </p>
+
+                    <p>
+                    Oh, and don’t forget, the same amazing <strong><em>Delicious Pizza</em></strong> can be delivered too.
+                </p>
+
             </div>
 
-
-            <div class="crust">
-                <form>
-                    <br>
-                    <p>Kindly select your favorite crust</p><br>
-                    <input type="radio" name="crust" value="Crispy">Crispy<br>
-                    <input type="radio" name="crust" value="Stuffed">Stuffed<br>
-                    <input type="radio" name="crust" value="Gluten-fee">Gluten-fee<br>
-                </form>
-            </div>
-
-            <div class="toppings">
-                <form>
-                    <br>
-                    <p>Please Kindly select the toppings of your choice</p><br>
-                    <input type="radio" name="toppings" value="">Sausage,caramelized onions and fennel<br>
-                    <input type="radio" name="toppings" value="">Pepperoni ,tomatoes ,mushrooms and onions<br>
-                    <input type="radio" name="toppings" value="">Pepperoni ,sausage, green-pepper ,onion and mushrooms<br>
-                    <input type="radio" name="toppings" value="">BBQ sauce, grilled chicken, scallions, and cheddar cheese<br>
-                    <input type="radio" name="toppings" value="">Roasted red peppers, chorizo, and feta<br>
-                    <input type="radio" name="toppings" value="">Spinach, caramelized onion, and bacon<br>
-                    <input type="radio" name="toppings" value="">Figs, prosciutto, and caramelized onions<br><br>
-                  
-                </form>
-                <br>
-                <button type="button" class="btn btn-primary">Delivery</button>
-                <button type="button" class="btn btn-light">Pick up </button><br>
-                <br>
-                <input type="submit" value="submit"><br>
-                <br>
-            </div>
         </div>
     </section>
 
-    <section>
-        <div id="contact">
-           <h1>CONTACT US</h1>
-           <p><strong>E-mail:</strong>deliciouspizza@gmail </p>
-           <p><strong>Phone Number :</strong>0788888888</p>
-           <p><strong>Twitter:</strong>Delicious Pizza</p>
-           <p><strong>Instagram:</strong>delicious_pizza</p>
-        </div>
-    </section>
     
+    <section>
+        <div id="contact"><br>
+           <h1><em>CONTACT US</em></h1>
+           <div class="contactt">
+
+            <form>
+                <label>First Name :</label><br>
+                <input type="text" id="fname" value=""><br>
+                <label>Last Name :</label><br>
+                <input type="text" id="lname" value=""><br>
+                <label>E-mail :</label><br>
+                <input type="email" id="email" value=""><br>
+                <label for="comment">Comment :</label><br>
+                <input type="text" id="comment" placeholder="Your comment .." value=""><br>
+                <br>
+                <input type="button" value="submit">
+            </form>
+
+           </div>
+        </div>
+      
 </body>
 </html>
