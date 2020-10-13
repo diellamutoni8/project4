@@ -122,9 +122,9 @@ function getToppings() {
     newPizza.toppings.push(toppingList);
     $("#chckout").show();
     var oneOrder =
-      sizeCalcPrice(pizzaSize) +
-      crustCalcPrice(crust) +
-      toppingsCalcPrice(toppingList);
+      calcSizePrice(pizzaSize) +
+      calcCrustPrice(crust) +
+      calcToppingsPrice(toppingList);
 
       $("#items").append(
 
@@ -143,13 +143,13 @@ function getToppings() {
   $("#addre").click(function() {
     var userName = $("#username").val();
     alert("Dear "+userName+" Your order will be delivered in not more than 20 minutes."
-    +" Thank you for choosing Dainty Pizzeria! Please come back again")
+    +" Thank you for choosing Delicious Pizza! Please come back again")
   });
 
 
   $("#messageform").submit(function(){
     var uname= $("input#names").val();
-    alert(uname+" we have received your message. Thank you for reaching out to us.");
+    alert(username+" we have received your message. Thank you for reaching out to us.");
    });
    });
   
